@@ -1,0 +1,156 @@
+﻿@using Exam._7.Models
+@model List<Team>
+@{
+    ViewData["Title"] = "Index";
+}
+<section>
+        <div class="row container let pt-5">
+            <div class="col-md-6">
+                <h2 class="text-dark">Let us create...</h2>
+                <p class="text-muted">You may contribute a small amount via PayPal if Nomad Force Template is useful for you. This will absolutely help us to keep creating better CSS templates for you.</p>
+                <p class="text-muted">We provide you 100% free templates on TemplateMo website. Images are provided by FreePik and Unsplash websites.</p>
+            </div>
+            <div class="col-md-6 pt-5">
+                <p class="text-muted">This Bootstrap 5 layout is free to use for your business. You are allowed to edit it in any way you like. However, please do not redistribute this template ZIP file for a template download purpose on any other website such as Free CSS collections.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="row about ">
+            <div class="col-md-3">
+                <img src="~/assets/img/elena-rabkina-eVVzwsNhNf4-unsplash.jpg" class="about-img" alt="">
+            </div>
+            <div class="col-md-3 bg-dark text-white text  justify-content-center">
+                <h2>We’re - idealists and strategic thinkers.</h2>
+                <p>Over six years in the video business</p>
+                <p>Read News & Events</p>
+                <p>Work with Us
+                </p>
+            </div>
+            <div class="col-md-6">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                    @foreach(var item in Model)
+                    {
+                    <div class="carousel-item active">
+                        <img src="~/assets/img/@item.Img" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>@item.Name</h5>
+                          <p>@item.Work</p>
+                        </div>
+                      </div>
+                        
+                    }
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <section class="section3">
+        <h2 class="text-center">Portfolio</h2>
+        <div class="container">
+            <div class="row portfolio">
+               <div class="col-lg-6">
+                <img src="https://templatemo.com/templates/templatemo_567_nomad_force/images/portfolio/visuals-Y4qzW3AsvqI-unsplash.jpeg" alt="">
+                <h3 class="fs-2">Effortless</h3>
+                <p class="text-danger fs-4">Branding</p>
+                <img src="https://templatemo.com/templates/templatemo_567_nomad_force/images/portfolio/severin-candrian-nn3uIZqmUtE-unsplash.jpeg" alt="">
+                <h3  class="fs-2">Health technology</h3>
+                <p class="text-success fs-4">Art Direction</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://templatemo.com/templates/templatemo_567_nomad_force/images/portfolio/tyler-nix-Y1drF0Y3Oe0-unsplash.jpeg" alt="">
+                <h3  class="fs-2">Maki</h3>
+                <p class="text-warning fs-4">Website</p>
+                <img src="https://templatemo.com/templates/templatemo_567_nomad_force/images/portfolio/thought-catalog-gv-T-OjLe4c-unsplash.jpeg" alt="">
+                <h3  class="fs-2">The gig economy</h3>
+                <p class="text-primary fs-4">Graphic</p>
+               </div>
+            </div>
+        </div>
+    </section>
+    <section class="section4">
+        <h2 class="text-center">News & Events</h2>
+        <div class="container">
+            <div class="row portfolio">
+               <div class="col-lg-6">
+                <img src="https://templatemo.com/templates/templatemo_567_nomad_force/images/news/caroline-lm-uqveD8dYPUM-unsplash.jpg" alt=""><br><br>
+                <h3 class="fs-4">The rise of the gig economy spells the end for these workers the old system</h3>
+                <p class="text-muted fs-5">22 hours ago</p>
+            </div>
+            <div class="col-lg-6 new">
+                <div class="d-flex">
+                    <div>
+                        <img src="https://templatemo.com/templates/templatemo_567_nomad_force/images/news/jean-philippe-delberghe-MmanXAs1sKw-unsplash.jpeg" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h3  class="fs-4">Job Opportunities: Digital, Marketing</h3>
+                        <p class="text-muted "><i class="bi bi-geo-alt"></i>Alaska,
+                            August 6, 2021</p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div>
+                    <img src="https://templatemo.com/templates/templatemo_567_nomad_force/images/news/maria-stewart-p4tj0g-_aMM-unsplash.jpeg" class="img2" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h3  class="fs-4">What happened to new viral video?</h3>
+                        <p class="text-muted ">6 days ago</p>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2 class="text-center fs-1">Dont' be shy, write to us</h2>
+        <form class="container col-lg-6 pt-5">
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+            <div class="row mb-4 ">
+              <div class="col">
+                <div class="form-outline">
+                  <input type="text" id="form3Example1" class="form-control" />
+                  <label class="form-label" for="form3Example1">First name</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-outline">
+                  <input type="text" id="form3Example2" class="form-control" />
+                  <label class="form-label" for="form3Example2">Last name</label>
+                </div>
+              </div>
+            </div>
+          
+            <div class="form-outline mb-4">
+                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                <label class="form-label" for="form4Example3">Message</label>
+              </div>
+            <!-- Checkbox -->
+            <div class="form-check d-flex justify-content-center mb-4">
+              <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+              <label class="form-check-label" for="form2Example33">
+                Subscribe to our newsletter
+              </label>
+            </div>
+          
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-dark text-center btn-block mb-4">Sign up</button>
+          
+          </form>
+    </section>
+    <section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96060.51304997546!2d47.093580026228096!3d41.2023491830815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404787c6c2deab39%3A0xa57076df3a269f4c!2sSheki%2C%20Azerbaijan!5e0!3m2!1sen!2s!4v1656230614592!5m2!1sen!2s" width="1519" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>

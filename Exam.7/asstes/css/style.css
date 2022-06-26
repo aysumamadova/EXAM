@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section1{
+    background-image: url("../img/bg-masthead.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+.mask{
+    padding-top: 13%;
+}
+.mask h1{
+    
+    font-size: 50px;
+}
+.cards .bi{
+    font-size: 60px;
+    color: blue;
+}

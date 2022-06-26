@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-image{
+    background-color: black;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.color{
+    color: #ffc107;
+}
+.navbar-brand{
+    font-size: 24px;
+} 
+.navbar{
+    position: sticky;
+}
+.navbar-nav{
+    font-size: 18px;
+}
+.let{
+    margin: 5%;
+}
+.let h2{
+    font-size: 42px;
+    margin: 5%;
+}
+.let p{
+    font-size: 20px;
+    margin: 5%;
+}
+.about-img{
+    width: 100%;
+    height: 100%;
+}
+.about{
+    width: 100%;
+}
+.text{
+    padding-top: 5%;
+}
+.text h2{
+    font-size: 40px;
+}
+.portfolio{
+    width: 100%;
+    padding: 4%;
+}
+.portfolio img{
+    width: 100%;
+}
+.section3{
+    padding: 7%;
+}
+.section3 h2{
+    font-size: 40px;
+}
+.section4{
+    padding: 4%;
+    width: 100%;
+}
+.section4 h2{
+    font-size: 40px;
+}
+.section4 img{
+    width: 100%;
+}
+.section4 .new .img2{
+    margin:2% ;
+}
+form{
+    width: 10%;
+}
